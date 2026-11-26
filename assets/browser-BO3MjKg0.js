@@ -1,0 +1,1 @@
+import{u as s,n as i}from"./use-config-store-C-dlIbqq.js";import"./index-Dc13ssFO.js";function p(){return{kind:"browser",url(t,e){const{proxyEnabled:o,proxyUrl:n}=s.getState().config;if(!o||!/^https?:\/\//i.test(t))return t;const r=i(n);return!r||t.startsWith(`${r}/`)?t:e==="sync"?`${r}/_sync/${encodeURIComponent(t)}`:`${r}/${t}`}}}export{p as createBrowserNetwork};
